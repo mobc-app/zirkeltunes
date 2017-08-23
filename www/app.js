@@ -1372,8 +1372,8 @@ exports.cordova_loop = cordova_loop;
 // default/boot_cordova.js
 $fsx.f[9] = function(module,exports){
 Object.defineProperty(exports, '__esModule', { value: true });
+var player = $fsx.r(7);
 var myplayer;
-var logic = $fsx.r(7);
 $(document).ready(function () {
     console.info('document ready');
     var options = {
@@ -1385,7 +1385,7 @@ $(document).ready(function () {
         loopInterval: 40,
         loopUrl: 'http://94.130.34.228/changeStation.mp3'
     };
-    myplayer = new logic.logic(options);
+    myplayer = new player.logic(options);
 });
 document.addEventListener('deviceready', function () {
     console.info('device ready');
