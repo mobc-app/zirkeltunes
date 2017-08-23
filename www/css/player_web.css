@@ -1,0 +1,184 @@
+﻿/* -------------------------------------------- */
+/* MusikZirkel player                           */
+/* layout - web browser                         */
+/* -------------------------------------------- */
+
+@import url("player_glb.css");
+
+/* -------------------------------------------- */
+#player_page {
+    width: 476px;
+    height: 268px;
+    min-width : 480px;
+    min-height : 320px;
+    max-width : 480px;
+    max-height : 320px;
+    margin: auto auto;
+    background: url('476x268/bg.png') no-repeat center 25px;
+}
+   
+/* -------------------------------------------- */
+#player_view {
+    height: 268px;
+    top: 24px;
+}
+
+/* -------------------------------------------- */
+#logo_view {
+    width: 129px;
+    height: 28px;
+    right: 47px;
+    bottom: 60px;
+    background:url('476x268/logo.png') no-repeat;
+}
+
+/* -------------------------------------------- */
+.txt_info {
+    font-size: 12pt;
+}
+
+.txt_channel {
+    font-size: 8pt;
+    color: #B1EC5E;
+    font-weight: 400;
+}
+
+.txt_duration {
+    font-size: 8pt;
+    color: #B1EC5E;
+    font-weight: 100;
+}
+
+/* -------------------------------------------- */
+#volume_view {
+    width: 150px;
+    height: 150px;
+    top: 17px;
+    right: 6.75%;
+    background:url('476x268/volume_bg.png') no-repeat 9px 10px;
+}
+
+#volume_knob {
+    width: 128px;
+    height: 128px;
+    top: 10px;
+    left: 9px;
+}
+
+.colorBar {
+    width: 5px;
+    height: 2px;
+}
+
+.knob{
+    width:90px;
+    height:90px;
+}
+
+.knob .top{
+    width:128px;
+    height:128px;
+    background:url('476x268/volume_btn.png') no-repeat center center;
+ }
+
+.knob .base{
+    width:90px;
+    height:90px;
+}
+
+.knob1 .top:after{
+    width:15px;
+    height:6px;
+    top:60px;
+    left:25px;
+    box-shadow: 1px 1px 1px #5a5a5a  inset;
+    border-radius: 5px;
+}
+
+/* -------------------------------------------- */
+
+#mute_view {
+    width: 38px;
+    height: 38px;
+}
+
+#btn_mute.ui-btn {
+    background:url('476x268/mute_off.png') no-repeat;
+}
+
+#btn_mute.ui-btn-active {
+    background:url('476x268/mute_on.png') no-repeat;
+}
+
+/* -------------------------------------------- */
+
+li #btn_4 {
+    left:45px;
+    top:-60px;
+    width:48px;
+    height:48px;
+}
+
+#btn_4.ui-btn {
+    background:url('476x268/stop_off.png') no-repeat;
+}
+
+#btn_4.ui-btn-active {
+    background:url('476x268/stop_on.png') no-repeat;
+}
+
+.ui-btn {
+    width: 49px;
+    height: 34px;
+    background:url('476x268/btn_off.png')no-repeat;
+}
+
+.ui-btn-active {
+    background:url('476x268/btn_on.png')no-repeat;
+}
+
+.ui-btn-text {
+    line-height: 12pt;
+    font-weight: normal;
+    font-size: 15pt;
+}
+
+/* -------------------------------------------- */
+#selectlist {
+    min-height: 250px; 
+    min-width: 150px;
+}
+
+#selectlist .ui-btn {
+    width:64px;
+    height:51px;
+   
+}
+#selectlist li a.button_select {
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    font-size:9pt;
+    border: 5px solid #254008;
+}
+
+#selectlist li a.button_active {
+   border: 5px solid #92D050;
+}
+
+/* -------------------------------------------- */
+#viewLogin {
+    min-width: 250px;
+    min-height: 200px;
+}
+
+.button_div {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.button_large {
+    margin: 0px;
+    height: 80px;
+}
+

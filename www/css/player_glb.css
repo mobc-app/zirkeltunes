@@ -1,0 +1,290 @@
+/* -------------------------------------------- */
+/* MusikZirkel player                           */
+/* layout - independing settings                */
+/* -------------------------------------------- */
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #141414;
+    color: #A9EE71;
+    font-family: Arial;
+    text-align: center;
+    margin: 0px;
+    visibility: hidden;
+}
+
+ul {
+ list-style: none;
+}
+ 
+
+li a {
+  text-decoration: none;
+}
+
+/* -------------------------------------------- */
+#player_page {
+   position: relative;
+   margin: auto;
+}
+
+/* -------------------------------------------- */
+#player_view {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+}
+
+/* -------------------------------------------- */
+#logo_view {
+    position: absolute;
+}
+
+/* -------------------------------------------- */
+#info_view  {
+    position: absolute;
+    width: 53.02%;
+    height: 35.50%;
+    top: 17.50%;
+    left: 8.22%;
+}
+
+#lbl_artist {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 4.50%;
+    left: 17.00%;
+    right: 17.00%;
+   
+}
+
+#lbl_title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 39.00%;
+    left: 3.10%;
+    right: 4.10%;
+   
+}
+
+#lbl_duration {
+    top: 5.50%;
+    left: 3.10%;
+}
+
+#lbl_position {
+    top: 5.50%;
+    right: 5.00%;
+}
+
+#lbl_channel {
+   position: absolute;
+   margin: 0px;
+   left: 2.10%;
+   right: 2.10%;
+   bottom: 8.00%;  
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.txt_info {
+    position: absolute;
+    margin: 0px;
+    left: 2.10%;
+    right: 2.10%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.txt_duration {
+    position: absolute;
+    margin: 0px;
+    bottom: 25.00%;
+}
+
+/* -------------------------------------------- */
+#mute_view {
+    position: absolute;
+    left: 36.00%;
+    bottom: 28.50%;
+}
+
+#btn_mute {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+li #btn_4 {
+    position:absolute;
+}
+
+/* -------------------------------------------- */
+#channel_view {
+    position: absolute;
+    width: 40.00%;
+    height: 14.00%;
+    left: 14.00%;
+    bottom: 8.00%;
+}
+
+#channel_view li {
+    padding: 0px;
+    margin-left: 13px;
+}
+
+.ui-btn {
+    padding:0px;
+    margin-left: 0px;
+}
+
+.ui-btn-active {
+}
+
+.ui-btn-text {
+  color: #A9EE71;
+  font-family: Arial;
+  text-align:center;
+  text-indent:0px;
+  text-decoration: none;
+}
+
+/* -------------------------------------------- */
+#volume_view {
+    position: absolute;
+    margin :0px;
+    padding: 0px;
+    top: 7.50%;
+    right: 1.06%;
+}
+
+#volume_bars {
+    height: 100%;
+	width: 100%;
+}
+
+#volume_knob {
+    position: absolute;
+    margin: 0px;
+}
+
+.colorBar {
+    position:absolute;
+	opacity: 0;
+}
+
+.colorBar.active {
+	opacity: 1;
+}
+
+.knob{
+    position: relative;
+}
+
+.knob .top{
+	top:0;
+	left:0;
+	z-index:10;
+	cursor:default !important;
+}
+
+.knob .base{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+
+.knob .top:after{
+    position:absolute;
+	content:'';
+    background-color: #A9EE71;
+	margin: 0px;
+    border-radius: 25px;
+	cursor:default !important;
+	box-shadow: 0 0 1px #5a5a5a inset;
+}
+
+.knob [draggable] {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* -------------------------------------------- */
+#viewLogin, #viewError, #viewMessage {
+    border: 3px solid white;
+    padding: 10px 20px;
+    background-color: black;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+#user, #pw {
+     background-color: white;
+     color: black;
+     border-radius: 10px;
+     text-indent: 5px;
+     margin-top: 15px;
+}
+
+#viewMessage {
+    text-align: left;
+}
+
+.frame {
+    background-color: gray; 
+    opacity: .5; 
+    border-radius: 10px
+}
+
+.errTxt {
+    color: red;
+    text-align: center;
+}
+
+.infoTxt {
+    color: #A9EE71;
+    text-align: center;
+}
+
+.button_div {
+    text-align: center;
+    vertical-align:bottom;
+ }
+
+.button_large {
+    padding: 5px 10px 5px 10px;
+    width: auto;
+    background-color: black;
+    background: #5F5F5F;
+    border-radius: 10px;
+    border: 5px solid #254008;
+    cursor: pointer;
+}
+
+/* -------------------------------------------- */
+#selectlist {
+    border: 3px solid white;
+    padding-left: 10px; 
+    background-color: black;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+#selectlist .ui-btn {
+    background: none;
+}
+
+#selectlist li a.button_select {
+    color: #A9EE71;
+    padding: 0;
+    margin: 0;
+    background: #5F5F5F;
+    border-radius: 10px;
+    cursor:pointer;
+}
