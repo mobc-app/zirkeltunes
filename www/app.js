@@ -2480,6 +2480,7 @@ $(document).ready(function () {
     };
     // import node_modules via FuseBox
     myplayer = new player.logic(options);
+    $('body').css('visibility', 'visible');
 });
 // cordova is ready ...
 document.addEventListener('deviceready', function () {

@@ -1,0 +1,431 @@
+/* -------------------------------------------- */
+/* MusikZirkel player                           */
+/* layout - mobile (Android)                    */
+/* -------------------------------------------- */
+
+@import url("player_glb.css");
+
+/* password */
+input.password-field {
+    -webkit-text-security: disc;
+}
+
+.knob [draggable] {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* 480 X 320  small size */
+@media only screen and (max-height : 526px) {
+
+    /* -------------------------------------------- */
+    #player_page {
+        width: 476px;
+        height: 268px;
+        margin: auto auto;
+        background: url('476x268/bg.png') center center no-repeat;
+    }
+
+    /* -------------------------------------------- */
+    #player_view {
+        height: 268px;
+        top: 2px;
+    }
+
+    /* -------------------------------------------- */
+    #logo_view {
+        width: 129px;
+        height: 28px;
+        right: 47px;
+        bottom: 60px;
+        background: url('476x268/logo.png') no-repeat;
+    }
+
+    /* -------------------------------------------- */
+    .txt_info {
+        font-size: 12pt;
+    }
+
+    .txt_channel {
+        font-size: 8pt;
+        color: #B1EC5E;
+        font-weight: 400;
+    }
+
+    .txt_duration {
+        font-size: 8pt;
+        color: #B1EC5E;
+        font-weight: 100;
+    }
+
+    /* -------------------------------------------- */
+    #volume_view {
+        width: 150px;
+        height: 150px;
+        top: 17px;
+        right: 6.75%;
+        background: url('476x268/volume_bg.png') no-repeat 9px 10px;
+    }
+
+    #volume_knob {
+        width: 128px;
+        height: 128px;
+        top: 10px;
+        left: 9px;
+    }
+
+    .colorBar {
+        width: 5px;
+        height: 2px;
+    }
+
+    .knob {
+        width: 90px;
+        height: 90px;
+    }
+
+        .knob .top {
+            width: 128px;
+            height: 128px;
+            background: url('476x268/volume_btn.png') no-repeat center center;
+        }
+
+        .knob .base {
+            width: 90px;
+            height: 90px;
+        }
+
+    .knob1 .top:after {
+        width: 15px;
+        height: 6px;
+        top: 60px;
+        left: 25px;
+        box-shadow: 1px 1px 1px #5a5a5a inset;
+        border-radius: 5px;
+    }
+
+    /* -------------------------------------------- */
+
+    #mute_view {
+        width: 38px;
+        height: 38px;
+    }
+
+    #btn_mute.ui-btn {
+        background: url('476x268/mute_off.png') no-repeat;
+    }
+
+    #btn_mute.ui-btn-active {
+        background: url('476x268/mute_on.png') no-repeat;
+    }
+
+    /* -------------------------------------------- */
+
+    li #btn_4 {
+        left: 45px;
+        top: -60px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #btn_4.ui-btn {
+        background: url('476x268/stop_off.png') no-repeat;
+    }
+
+    #btn_4.ui-btn-active {
+        background: url('476x268/stop_on.png') no-repeat;
+    }
+
+    .ui-btn {
+        width: 49px;
+        height: 34px;
+        background: url('476x268/btn_off.png')no-repeat;
+    }
+
+    .ui-btn-active {
+        background: url('476x268/btn_on.png')no-repeat;
+    }
+
+    .ui-btn-text {
+        line-height: 12pt;
+        font-weight: normal;
+        font-size: 15pt;
+    }
+
+    /* -------------------------------------------- */
+    #selectlist {
+        min-height: 250px;
+        min-width: 150px;
+    }
+
+        #selectlist .ui-btn {
+            width: 64px;
+            height: 51px;
+        }
+
+        #selectlist li a.button_select {
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 9pt;
+            border: 5px solid #254008;
+        }
+
+        #selectlist li a.button_active {
+            border: 5px solid #92D050;
+        }
+
+    /* -------------------------------------------- */
+    #viewLogin {
+        min-width: 250px;
+        min-height: 200px;
+    }
+
+    .button_div {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .button_large {
+        margin: 0px;
+        height: 80px;
+    }
+}
+
+/* 947 X 533 (original large size) */
+@media only screen and (min-height : 527px) {
+
+    /* -------------------------------------------- */
+    #player_page {
+        width: 947px;
+        height: 533px;
+        margin: auto auto;
+        background: url('947x533/bg.png') no-repeat center center;
+    }
+
+    /* -------------------------------------------- */
+    #player_view {
+        margin: auto auto;
+        height: 533px;
+    }
+
+    /* -------------------------------------------- */
+    #logo_view {
+       width: 225px;
+        height: 49px;
+        right: 153px;
+        bottom: 144px;
+        background: url('947x533/logo.png') no-repeat;
+    }
+
+    /* -------------------------------------------- */
+    #info_view {
+        width: 40.00%;
+        height: 26.50%;
+        top: 23.50%;
+        left: 17.50%;
+    }
+
+    #lbl_artist {
+        top: 3.00%;
+        left: 15.50%;
+        right: 17.00%;
+    }
+
+    #lbl_title {
+        top: 37.00%;
+        left: 3.00%;
+        right: 5.50%;
+    }
+
+    #lbl_channel {
+        left: 3.50%;
+        right: 5.50%;
+        bottom: 9.00%;
+    }
+
+    /* -------------------------------------------- */
+    .marquee {
+        overflow: hidden;
+    }
+
+    .txt_info {
+        font-size: 19pt;
+        color: #B1EC5E;
+    }
+
+    .txt_channel {
+        font-size: 11pt;
+        color: #B1EC5E;
+        font-weight: 500;
+    }
+
+    .txt_duration {
+        font-size: 12pt;
+        color: #B1EC5E;
+        font-weight: 100;
+    }
+
+    /* -------------------------------------------- */
+    #volume_view {
+        width: 222px;
+        height: 222px;
+        right: 16.5%;
+        top: 16.5%;
+        background: url('947x533/volume_bg.png') no-repeat 14px 14px;
+    }
+
+    #volume_knob {
+        width: 191px;
+        height: 191px;
+        top: 15px;
+        left: 12px;
+    }
+
+    .colorBar {
+        width: 10px;
+        height: 2px;
+    }
+
+    .knob {
+        width: 133px;
+        height: 133px;
+    }
+
+        .knob .top {
+            width: 191px;
+            height: 191px;
+            background: url('947x533/volume_btn.png') no-repeat center center;
+        }
+
+        .knob .base {
+            width: 133px;
+            height: 133px;
+        }
+
+    .knob1 .top:after {
+        width: 12px;
+        height: 12px;
+        top: 111px;
+        left: 20px;
+    }
+
+    /* -------------------------------------------- */
+    #mute_view {
+        left: 39.00%;
+        bottom: 33.50%;
+        width: 62px;
+        height: 62px;
+    }
+
+    #btn_mute.ui-btn {
+        background: url('947x533/mute_off.png') no-repeat;
+    }
+
+    #btn_mute.ui-btn-active {
+        background: url('947x533/mute_on.png') no-repeat;
+    }
+
+    li #btn_4 {
+        left: 75px;
+        top: -115px;
+        width: 76px;
+        height: 76px;
+    }
+
+    #btn_4.ui-btn {
+        background: url('947x533/stop_off.png') no-repeat;
+    }
+
+    #btn_4.ui-btn-active {
+        background: url('947x533/stop_on.png') no-repeat;
+    }
+
+    /* -------------------------------------------- */
+    #channel_view {
+        width: 32.00%;
+        height: 10.50%;
+        left: 20.00%;
+        bottom: 15.00%;
+    }
+
+        #channel_view li {
+            padding: 0px;
+            margin-left: 22px;
+        }
+
+    .ui-btn {
+        width: 80px;
+        height: 54px;
+        background: url('947x533/btn_off.png') center center no-repeat;
+    }
+
+    .ui-btn-active {
+        background: url('947x533/btn_on.png') center center no-repeat;
+    }
+
+    .ui-btn-text {
+        line-height: 35px;
+        vertical-align: middle;
+        font-size: 20pt;
+    }
+
+    /* -------------------------------------------- */
+    h3 {
+        font-size: 21pt;
+    }
+
+    #selectlist {
+        min-height: 485px;
+        min-width: 215px;
+        font-size: 17pt;
+    }
+
+        #selectlist .ui-btn {
+            width: 135px;
+            height: 101px;
+        }
+
+        #selectlist li a.button_select {
+            width: 170px;
+            height: 60px;
+            padding: 10px;
+            margin-top: 5px;
+            line-height: 60px;
+            font-size: 15pt;
+            border: 8px solid #254008;
+        }
+
+        #selectlist li a.button_active {
+            border: 8px solid #92D050;
+        }
+
+    #txt_msg, #txt_err {
+        font-size: 16pt;
+    }
+
+    /* -------------------------------------------- */
+    #viewLogin {
+        min-height: 260px;
+    }
+
+    #viewLogin, #viewError, #viewMessage {
+        min-width: 440px;
+    }
+
+    .button_div {
+        margin-top: 60px;
+        margin-bottom: 25px;
+        font-size: 15pt;
+    }
+
+    .button_large {
+        margin: 20px;
+        height: 100px !important;
+    }
+}
+
+/* border: 1px solid green; */
+
+
