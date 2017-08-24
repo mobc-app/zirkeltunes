@@ -1379,6 +1379,9 @@ var player = $fsx.r(7);
 var myplayer;
 $(document).ready(function () {
     console.info('document ready');
+});
+document.addEventListener('deviceready', function () {
+    console.info('device ready');
     var options = {
         login: null,
         player: 'cordova',
@@ -1390,9 +1393,6 @@ $(document).ready(function () {
     };
     myplayer = new player.logic(options);
     $('body').css('visibility', 'visible');
-});
-document.addEventListener('deviceready', function () {
-    console.info('device ready');
     var val;
     if ($(window).height() == 527) {
         val = 2;
